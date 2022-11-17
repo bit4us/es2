@@ -88,7 +88,7 @@ Like: www.facebook.com/conprim
 			&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AAAAAA">Easy</span><span style="color:#FF0000; font-weight: bold">Speak</span>
 			</p>
 			<p style="margin-top:-10px;font-size:small; font-weight: bold">
-				<span style="color:#AAAAAA;">Toastmasters</span> <span style="color:#FF0000; font-weight: bold">Management</span>
+				<span style="color:#AAAAAA;">Toastmasters</span> <span style="color:#FF0000; font-weight: bold">Club Management</span>
 			</p>
 		</a>
 
@@ -150,7 +150,7 @@ Like: www.facebook.com/conprim
                 data-speed="400"
                 data-start="2000"
                 data-easing="easeOutExpo">
-                Toastmasters Management
+                Toastmasters Club Management
               </div>
               <!--<a class="caption lft btn dark slide_btn slide_item_left" href="conprim/"
                 data-x="187"
@@ -189,7 +189,7 @@ Like: www.facebook.com/conprim
                 data-speed="400"
                 data-start="2000"
                 data-easing="easeOutExpo">
-                Toastmasters Management
+                Toastmasters Club Management
               </div>
               <div class="caption lft slide_desc slide_item_left"
                 data-x="30"
@@ -337,7 +337,7 @@ Like: www.facebook.com/conprim
         <!-- BEGIN BLOCKQUOTE BLOCK -->   
         <div class="row quote-v1 margin-bottom-30">
           <div class="col-md-9">
-            <span>Easy<span style="color:#FF0000; font-weight: bold">Speak</span> 2.0 - the new Toastmasters Management experience</span>
+            <span>Easy<span style="color:#FF0000; font-weight: bold">Speak</span> 2.0 - the new Toastmasters Club Management experience</span>
           </div>
           <div class="col-md-3 text-right">
             <!--<a class="btn-transparent" href="conprim" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Accesează aplicația</a>-->
