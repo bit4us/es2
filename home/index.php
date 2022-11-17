@@ -145,7 +145,7 @@ Like: www.facebook.com/conprim
                 Coming up soon<br><span class="slide_title_white_bold">Easy<span style="color:#FF0000; font-weight: bold">Speak</span> 2.0</span>
               </div>
               <div class="caption lft slide_subtitle_white slide_item_left"
-                data-x="50"
+                data-x="60"
                 data-y="245"
                 data-speed="400"
                 data-start="2000"
