@@ -6,7 +6,7 @@ $_SESSION = array();
 session_destroy();
 
 
-require_once('./googleOauth2Config.php');
+// require_once('./googleOauth2Config.php');
 
 ?>
 
@@ -71,9 +71,9 @@ require_once('./googleOauth2Config.php');
 				<br><br>
 				<a href="javascript:;" id="forget-password" style="text-align: center;">Forgotten password?</a>
 				<hr>
-				<button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
+				<!-- <button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
 					<i class="fa-brands fa-google"></i> Log in with Google
-				</button>
+				</button> -->
 			</div>
 			<div>
 				
