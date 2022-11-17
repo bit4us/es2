@@ -85,7 +85,7 @@ Like: www.facebook.com/conprim
       <div class="container">
         <a class="site-logo" href="./" style="text-decoration:none">
 			<p>
-			&nbsp;<span style="color:#AAAAAA">Easy</span><span style="color:#FF0000; font-weight: bold">Speak</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#AAAAAA">Easy</span><span style="color:#FF0000; font-weight: bold">Speak</span>
 			</p>
 			<p style="margin-top:-10px;font-size:small; ">
 				<span style="color:#AAAAAA;">Toastmasters</span> <span style="color:#FF0000; font-weight: bold">Management</span>
