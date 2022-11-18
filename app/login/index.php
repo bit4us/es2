@@ -96,7 +96,7 @@ session_destroy();
 				<a href="javascript:;" id="register-btn" class="btn btn-danger" style="width: 100%">Register</a>
 				<br><br>
 				<a href="javascript:;" id="forget-password" style="text-align: center;">Forgotten password?</a>
-				<hr>
+				<!-- <hr> -->
 				<!-- <button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
 					<i class="fa-brands fa-google"></i> Log in with Google
 				</button> -->
@@ -172,7 +172,7 @@ session_destroy();
 			<button type="submit" id="register-submit-btn" class="btn green pull-right">
 				Register <i class="m-icon-swapright m-icon-white"></i>
 			</button>
-			<hr>
+			<!-- <hr> -->
 			<!-- <button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
 					<i class="fa-brands fa-google"></i> Sign in with Google
 				</button> -->
