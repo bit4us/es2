@@ -71,8 +71,7 @@ Like: www.facebook.com/conprim
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <li><a href="../app/login/">Authenticate</a></li>
-                        <li><a href="../app/login/">Register</a></li>
+                        <li><a href="../app/login/">Login</a></li>
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->
