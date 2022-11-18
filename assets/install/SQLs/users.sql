@@ -1,1 +1,12 @@
-CREATE TABLE `EasySpeak2`.`Users` ( `_id` INT(10) NOT NULL AUTO_INCREMENT , `username` VARCHAR(30) NOT NULL , `_active` INT(1) NOT NULL DEFAULT '1' , `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`_id`));
+CREATE TABLE `Users` 
+    ( 
+        `id` INT(10) NOT NULL AUTO_INCREMENT , 
+        `email` VARCHAR(50) NOT NULL , 
+        `password` VARCHAR(50) NOT NULL, 
+        `firstName` VARCHAR(50) NOT NULL, 
+        `lastName` VARCHAR(50) NOT NULL, 
+        `avatar` VARCHAR(50) NOT NULL, 
+        `session` VARCHAR(20) NOT NULL, 
+        `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+        PRIMARY KEY (`id`)
+    );

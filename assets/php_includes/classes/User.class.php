@@ -106,12 +106,12 @@ class User {
     public function authenticate(){
         $database = new Database;
         try{
-            $database->query("SELECT _id FROM Users WHERE email= :email AND password= :password");
+            $database->query("SELECT id FROM Users WHERE email= :email AND password= :password");
             $database->bind(":email", $this->getEmail());
             $database->bind(":password", $this->getPassword());
             $row = $database->single();
             if($row){
-                $this->setID($row['_id']);
+                $this->setID($row['id']);
                 $this->writeToLogAuthenticationSuccessful();
                 return true;
             }
@@ -130,11 +130,11 @@ class User {
 
     public function findUserIdByMail(){
         $database = new Database;
-        $database->query("SELECT _id FROM Users WHERE email=:email");
+        $database->query("SELECT id FROM Users WHERE email=:email");
         $database->bind(':email', $this->getEmail());
         $row=$database->single();
         if($row){
-            $this->setID($row['_id']);
+            $this->setID($row['id']);
         return true;
         }
         else{
