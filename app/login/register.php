@@ -7,7 +7,7 @@ require_once('../../assets/php_includes/classes/User.class.php');
 
 if($_POST['fname'] && $_POST['lname'] && $_POST['email'] && $_POST['password'] && $_POST['rpassword']){
   if($_POST['password']!=$_POST['rpassword']){
-    header('Location: ./login.php?r=pc');  //password confirmation error
+    header('Location: ./index.php?r=pc');  //password confirmation error
     exit;
   }
   $user = new User();
@@ -31,7 +31,7 @@ if($_POST['fname'] && $_POST['lname'] && $_POST['email'] && $_POST['password'] &
     }
   }
   else{
-    header('Location: ./index.php?r=ae');
+    header('Location: ./index.php?r=ae'); // email already registered
     exit;
   }
 }

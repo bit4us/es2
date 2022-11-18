@@ -8,6 +8,8 @@ session_destroy();
 
 // require_once('./googleOauth2Config.php');
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -47,6 +49,30 @@ session_destroy();
 	</div>
 	<!-- BEGIN LOGIN FORM -->
     <div class="content">
+		<?php
+			if($_GET['r'] || $_GET['l']){
+			$message = "";
+			switch($_GET['r']){
+				case "pc": $message = 'Password confirmation error';
+				break;
+				case "rf": $message = 'Registration failed';
+				break;
+				case "ae": $message = 'Email already registered';
+				break;
+				case "mp": $message = 'All fields are mandatory. One or more fields was not filled';
+				break;
+			}
+			switch ($_GET['l']) {
+				case "a": $message = 'email and / or password incorrect';
+				break;
+				case "ep": $message = 'email and / or password not set';
+				break;
+			}
+		?>
+			<div><?=$message?></div>
+		<?php
+			}
+		?>
 		<!-- BEGIN LOGIN FORM -->
 		<form class="login-form" action="./authenticate.php" method="post" autocomplete="off" id="login">
 			<h3 class="form-title">Login</h3>
