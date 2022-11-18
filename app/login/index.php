@@ -48,7 +48,7 @@ session_destroy();
 	<!-- BEGIN LOGIN FORM -->
     <div class="content">
 		<!-- BEGIN LOGIN FORM -->
-		<form class="login-form" action="./authenticate.php" method="post" autocomplete="off">
+		<form class="login-form" action="./authenticate.php" method="post" autocomplete="off" id="login">
 			<h3 class="form-title">Login</h3>
 			<div class="form-group">
 				<div class="input-icon">
@@ -81,7 +81,7 @@ session_destroy();
 		</form>
 		<!-- END LOGIN FORM -->
 		<!-- BEGIN FORGOT PASSWORD FORM -->
-	<form class="forget-form" action="include/functions/login/resetPassword.php" method="post">
+	<form class="forget-form" action="include/functions/login/resetPassword.php" method="post" id="preset">
 		<h3>Forgotten password?</h3>
 		
 		<div class="form-group">
@@ -100,7 +100,7 @@ session_destroy();
 	</form>
 	<!-- END FORGOT PASSWORD FORM -->
 	<!-- BEGIN REGISTRATION FORM -->
-	<form class="register-form" action="./register.php" method="post">
+	<form class="register-form" action="./register.php" method="post" id="reg">
 		<h3>Register</h3>
 		<div class="form-group">
 			<label class="control-label visible-ie8 visible-ie9">Given Name</label>
