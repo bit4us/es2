@@ -173,9 +173,9 @@ session_destroy();
 				Register <i class="m-icon-swapright m-icon-white"></i>
 			</button>
 			<hr>
-			<button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
+			<!-- <button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
 					<i class="fa-brands fa-google"></i> Sign in with Google
-				</button>
+				</button> -->
 		</div>
 	</form>
 	<!-- END REGISTRATION FORM -->
