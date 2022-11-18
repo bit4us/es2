@@ -17,16 +17,16 @@ if($_POST['fname'] && $_POST['lname'] && $_POST['email'] && $_POST['password'] &
     $user->setEmail($_POST["email"]);
     $user->setPassword(md5($_POST['password']));
     $registered = $user->registerUser();
-    echo "<br>registration message: ".$registrationMessage;
+    // echo "<br>registration message: ".$registrationMessage;
     $user->authenticate();
     $_SESSION['id'] = $user->getID();
-    // header("Location: ../dashboard"); 
-    // exit;
+    header("Location: ../dashboard"); 
+    exit;
   }
   catch(Exception $e){
-    echo 'Message: ' .$e->getMessage();
-    //header("Location: ./index.php/?r=rf"); //registration failed
-    // exit;
+    // echo '<br/>Message: ' .$e->getMessage();
+    header("Location: ./index.php/?r=rf"); //registration failed
+    exit;
   }
 }
 else{
