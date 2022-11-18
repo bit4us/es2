@@ -99,10 +99,7 @@ session_destroy();
 				<!-- <hr> -->
 				<!-- <button onclick="window.location = '<?= $login_url ?>' " type="button" class="btn" style="background: white; color: black; width: 100%">
 					<i class="fa-brands fa-google"></i> Log in with Google
-				</button> -->
-			</div>
-			<div>
-				
+				</button> -->				
 			</div>
 		</form>
 		<!-- END LOGIN FORM -->
