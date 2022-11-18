@@ -69,7 +69,7 @@ session_destroy();
 				break;
 			}
 		?>
-			<div><?=$message?></div>
+			<div style="text-align: center; color: red;"><?=$message?></div>
 		<?php
 			}
 		?>
