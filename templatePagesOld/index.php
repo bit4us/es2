@@ -1,16 +1,17 @@
-<?php session_start(); 
-include_once "include/_session.php";
+<!-- <?php 
+// session_start(); 
+// include_once "include/_session.php";
 
-if(isset($_SESSION['cid'])){
-  unset($_SESSION['cid']);
-}
-include_once "include/classes/company/company.class.php"; 
+// if(isset($_SESSION['cid'])){
+//   unset($_SESSION['cid']);
+// }
+// include_once "include/classes/company/company.class.php"; 
 
-$companiesList = new CompanyList();
+// $companiesList = new CompanyList();
 
 // http://www.pregatire.net/contapro2/contapro2/home.php
 // http://app.contabilitate.ro/demo/web/webclient/home
-?>
+?> -->
 <!DOCTYPE html>
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -337,7 +338,7 @@ $companiesList = new CompanyList();
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-					<?=$user->first?> <?=$user->last?> <small>Firme gestionate</small>
+					<!-- <?=$user->first?> <?=$user->last?> <small>Firme gestionate</small> -->
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
@@ -478,7 +479,7 @@ $companiesList = new CompanyList();
 				<div class="col-md-12">
                     <div class="add-portfolio">
 					    <span>
-						Aveți în gestiune <?=count($companiesList)?> <?php if(count($companiesList)==1){ ?>firmă<?php }else{ ?>firme<?php } ?> </span>
+						<!-- Aveți în gestiune <?=count($companiesList)?> <?php if(count($companiesList)==1){ ?>firmă<?php }else{ ?>firme<?php } ?> </span> -->
 						<a href="#addNewCompany" data-toggle="modal" class="btn icn-only green">
 						    Adaugă o firmă nouă <i class="m-icon-swapright m-icon-white"></i>
 						</a>
@@ -488,15 +489,15 @@ $companiesList = new CompanyList();
 			<!--end add-portfolio-->
 			<div><font style="color: #a40000">Pentru a prelucra informații în contul unei firme trebuie să alegeți firma întotdeauna din această pagină!</font></div>
 <?php
-if(count($companiesList)==0){
-  echo "Nu aveți nici o firmă atribuită contului dumneavoastră. Adăugați o firmă nouă.";
-}
-else{
-  $cids = $companiesList->getCompanyListForUser($user->uid);
-    foreach($cids as $cid){
-      $company = new Company();
-      $company->cid = $cid;
-      $company->getCompanyFullInfo();
+// if(count($companiesList)==0){
+//   echo "Nu aveți nici o firmă atribuită contului dumneavoastră. Adăugați o firmă nouă.";
+// }
+// else{
+//   $cids = $companiesList->getCompanyListForUser($user->uid);
+//     foreach($cids as $cid){
+//       $company = new Company();
+//       $company->cid = $cid;
+//       $company->getCompanyFullInfo();
       
 ?>			
 			<div class="row portfolio-block">
@@ -504,7 +505,7 @@ else{
 				    <div class="portfolio-text">
 					    <!--<img src="../assets/admin/pages/media/profile/logo_metronic.jpg" alt=""/>-->
 						    <div class="portfolio-text-info">
-							    <a href="include/functions/index/manage.php?cid=<?=$company->cid?>"><h4><?=$company->name?></h4></a>
+							    <!-- <a href="include/functions/index/manage.php?cid=<?=$company->cid?>"><h4><?=$company->name?></h4></a>
 								<p style="font-size:12px;">
 								    Plătitor TVA: 
 								    <?php if (strcasecmp($company->fiscalAttribute, "RO") == 0){?>DA<br/>
@@ -513,7 +514,7 @@ else{
 								    Adresa: <?=$company->address ?><br/>
 								    Județ: <?=$company->county?><br/>
 								    Banca: <?=$company->bank?><br/>
-								    Capital social: <?=$company->capital?><br/>
+								    Capital social: <?=$company->capital?><br/> -->
                     			</p>
 					        </div>
                         </div>
@@ -521,16 +522,16 @@ else{
 					<div class="col-md-5 portfolio-stat">
 						<div class="portfolio-info">
 						    CUI <span>
-							<?=$company->cui?></span>
+							<!-- <?=$company->cui?></span> -->
 						</div>
 						<div class="portfolio-info">
 						    Cont Bancar (IBAN) <span>
-							<?=$company->iban?></span>
+							<!-- <?=$company->iban?></span> -->
             			</div>
                     </div>
 					<div class="col-md-2">
 					    <div class="portfolio-btn">
-						<a href="include/functions/index/manage.php?cid=<?=$company->cid?>" class="btn bigicn-only">
+						<!-- <a href="include/functions/index/manage.php?cid=<?=$company->cid?>" class="btn bigicn-only"> -->
 						<span>
 						Administrează </span>
 						</a>
