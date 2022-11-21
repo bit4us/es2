@@ -338,7 +338,7 @@
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-					<!-- <?=$user->first?> <?=$user->last?> <small>Firme gestionate</small> -->
+					<!--  <small>Firme gestionate</small> -->
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
@@ -479,7 +479,7 @@
 				<div class="col-md-12">
                     <div class="add-portfolio">
 					    <span>
-						<!-- Aveți în gestiune <?=count($companiesList)?> <?php if(count($companiesList)==1){ ?>firmă<?php }else{ ?>firme<?php } ?> </span> -->
+						Aveți în gestiune </span>
 						<a href="#addNewCompany" data-toggle="modal" class="btn icn-only green">
 						    Adaugă o firmă nouă <i class="m-icon-swapright m-icon-white"></i>
 						</a>
@@ -505,16 +505,15 @@
 				    <div class="portfolio-text">
 					    <!--<img src="../assets/admin/pages/media/profile/logo_metronic.jpg" alt=""/>-->
 						    <div class="portfolio-text-info">
-							    <!-- <a href="include/functions/index/manage.php?cid=<?=$company->cid?>"><h4><?=$company->name?></h4></a>
+							    <a href="include/functions/index/manage.php?cid="><h4>Company Name</h4></a>
 								<p style="font-size:12px;">
 								    Plătitor TVA: 
-								    <?php if (strcasecmp($company->fiscalAttribute, "RO") == 0){?>DA<br/>
-								    <?php }else{?>NU<br/><?php } ?>
-								    Nr. Ordin la Registrul Comerțului: <?=$company->registryOfCommerce?><br/>
-								    Adresa: <?=$company->address ?><br/>
-								    Județ: <?=$company->county?><br/>
-								    Banca: <?=$company->bank?><br/>
-								    Capital social: <?=$company->capital?><br/> -->
+								    DA<br/>
+								    Nr. Ordin la Registrul Comerțului: <br/>
+								    Adresa: <br/>
+								    Județ: <br/>
+								    Banca: <br/>
+								    Capital social: <br/> -->
                     			</p>
 					        </div>
                         </div>
@@ -522,16 +521,16 @@
 					<div class="col-md-5 portfolio-stat">
 						<div class="portfolio-info">
 						    CUI <span>
-							<!-- <?=$company->cui?></span> -->
+							</span>
 						</div>
 						<div class="portfolio-info">
 						    Cont Bancar (IBAN) <span>
-							<!-- <?=$company->iban?></span> -->
+							</span>
             			</div>
                     </div>
 					<div class="col-md-2">
 					    <div class="portfolio-btn">
-						<!-- <a href="include/functions/index/manage.php?cid=<?=$company->cid?>" class="btn bigicn-only"> -->
+						<a href="include/functions/index/manage.php?cid=" class="btn bigicn-only">
 						<span>
 						Administrează </span>
 						</a>
@@ -539,10 +538,7 @@
 				</div>
 			</div>
 			<!--end row-->
-<?php
-}
-}
-?>
+
 
 			<!-- END PAGE CONTENT-->
 		</div>
