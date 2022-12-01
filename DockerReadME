@@ -1,0 +1,6 @@
+for windows volume, keep the code on C: Drive to work.
+
+to run in docker, just run:
+no need to create images from Dockerfile (it will automatically compose)
+
+docker-compose up -d
