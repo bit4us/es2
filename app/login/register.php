@@ -18,7 +18,6 @@ if($_POST['fname'] && $_POST['lname'] && $_POST['email'] && $_POST['password'] &
   if(!$user->findUserIdByMail()){
     try{
       $registered = $user->registerUser();
-      // echo "<br>registration message: ".$registrationMessage;
       $user->authenticate();
       $_SESSION['id'] = $user->getID();
       header("Location: ../dashboard"); 
@@ -31,11 +30,13 @@ if($_POST['fname'] && $_POST['lname'] && $_POST['email'] && $_POST['password'] &
     }
   }
   else{
+    // echo "email already registered";
     header('Location: ./index.php?r=ae'); // email already registered
     exit;
   }
 }
 else{
+  // echo "missing params";
   header('Location: ./index.php?r=mp'); //missing params
   exit;
 }

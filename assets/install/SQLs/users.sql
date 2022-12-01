@@ -5,7 +5,7 @@ CREATE TABLE `Users`
         `password` VARCHAR(50) NOT NULL, 
         `firstName` VARCHAR(50) NOT NULL, 
         `lastName` VARCHAR(50) NOT NULL, 
-        `avatar` VARCHAR(50) NOT NULL, 
+        `avatar` VARCHAR(50) NULL, 
         `session` VARCHAR(20) NOT NULL, 
         `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
         PRIMARY KEY (`id`)

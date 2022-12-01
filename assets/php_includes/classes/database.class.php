@@ -1,10 +1,10 @@
 <?php
 
 class Database {
-    private $host = "localhost";
-    private $user = "pwgzlwmy_es2";
-    private $pass = "Jh9DbtyohJkET5)j";
-    private $dbname = "pwgzlwmy_es2";
+    private $host = "mysql";
+    private $user = "root";
+    private $pass = "root";
+    private $dbname = "es2dev";
 
     private $dbh;
     private $error;
