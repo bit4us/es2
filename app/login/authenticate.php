@@ -18,10 +18,12 @@ if(isset($_POST['email']) && isset($_POST['password']))
     }
     else{
         header('Location: ./index.php?l=a'); //authentication failed
+        exit;
     }
 }
 else{
     header('Location: ./index.php?l=ep'); // email / password not set.
+    exit;
 }
 
 

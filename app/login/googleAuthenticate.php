@@ -30,7 +30,6 @@ if(isset($token["error"]) != "invalid_grant"){
         $_SESSION['id'] = $user->getID();
         header('Location: ../dashboard/');
         exit;
-        // echo "<a href='../dashboard/'>Dashboard</a>";
     }
     else{
         header('Location: ./index.php');
