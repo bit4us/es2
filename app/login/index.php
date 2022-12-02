@@ -56,6 +56,8 @@ $message= "";
 					break;
 					case "rf": $message = 'Registration failed';
 					break;
+					case "ge": $message = 'You have registered with Google Login. Use Log in with Google';
+					break;
 					case "ae": $message = 'Email already registered';
 					break;
 					case "mp": $message = 'All fields are mandatory. One or more fields was not filled';
@@ -65,6 +67,8 @@ $message= "";
 			if(isset($_GET['l'])){
 				switch ($_GET['l']) {
 					case "a": $message = 'email and / or password incorrect';
+					break;
+					case "ge": $message = 'You have registered with Google. <br/> Use <b>Log in with Google</b>';
 					break;
 					case "ep": $message = 'email and / or password not set';
 					break;

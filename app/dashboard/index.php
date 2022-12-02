@@ -14,7 +14,6 @@ require_once('../../assets/php_includes/classes/User.class.php');
 $user = new USER;
 $user->setID($_SESSION['id']);
 $user->getUser();
-
 ?>
 
 Welcome to the Dashboard <?=$user->getFirstName()?> <?=$user->getLastName()?>.

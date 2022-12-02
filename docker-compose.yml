@@ -19,6 +19,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
+      TZ: Europe/Prague
     volumes:
       - ./data/mysql:/data
     ports:

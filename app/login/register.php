@@ -15,6 +15,10 @@ if($_POST['fname'] && $_POST['lname'] && $_POST['email'] && $_POST['password'] &
   $user->setLastName($_POST['lname']);
   $user->setEmail($_POST["email"]);
   $user->setPassword(md5($_POST['password']));
+  if($user->findGoogleUserIdByMail()){
+    header('Location: ./index.php?r=ge'); // google email already registered
+    exit;
+  }
   if(!$user->findUserIdByMail()){
     try{
       $registered = $user->registerUser();

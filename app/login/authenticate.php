@@ -11,14 +11,22 @@ if(isset($_POST['email']) && isset($_POST['password']))
 {
     $user->setEmail($_POST['email']);
     $user->setPassword(md5($_POST['password']));
+    
     if($user->authenticate()){
         $_SESSION['id'] = $user->getID();
         header('Location: ../dashboard/');
         exit;
     }
     else{
-        header('Location: ./index.php?l=a'); //authentication failed
-        exit;
+        // echo '-'.$user->findGoogleUserIdByMail().'-';
+        if($user->findGoogleUserIdByMail()){
+            header('Location: ./index.php?l=ge'); // google email already registered
+            exit;
+        }
+        else{
+            header('Location: ./index.php?l=a'); //authentication failed
+            exit;    
+        }
     }
 }
 else{

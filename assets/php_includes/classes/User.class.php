@@ -1,5 +1,7 @@
 <?php
 
+include_once('Log.class.php');
+
 class User {
     private $id, $email, $password, $firstName, $lastName, $avatar, $session, $registrationDate;
 
@@ -52,48 +54,6 @@ class User {
         return $this->registrationDate;
     }
 
-    private function writeToLogRegistrationSuccessful(){
-        $database = new Database;
-        $database->query('
-            INSERT INTO log_operations
-                (userID, labeltype, operation)
-            VALUES
-                (:userID, :labeltype, :operation)
-        ');
-        $database->bind(':userID', $this->getID());
-        $database->bind(':labeltype', 'success');
-        $database->bind(':operation', 'User registration completed successfully');
-        $database->execute();
-    }
-
-    private function writeToLogAuthenticationSuccessful(){
-        $database = new Database;
-        $database->query('
-            INSERT INTO log_operations
-                (userID, labeltype, operation)
-            VALUES
-                (:userID, :labeltype, :operation)
-        ');
-        $database->bind(':userID', $this->getID());
-        $database->bind(':labeltype', 'success');
-        $database->bind(':operation', 'Login completed succesfully');
-        $database->execute();
-    }
-
-    private function writeToLogAuthenticationFailed(){
-        $database = new Database;
-        $database->query('
-            INSERT INTO log_operations
-                (userID, labeltype, operation)
-            VALUES
-                (:userID, :labeltype, :operation)
-        ');
-        $database->bind(':userID', $this->getID());
-        $database->bind(':labeltype', 'danger');
-        $database->bind(':operation', 'Authentication failed');
-        $database->execute();
-    }
-
     private function generateCode($length){
         $chars = "vwxyzABCD0123456";
         $code = "";
@@ -110,15 +70,36 @@ class User {
             $database->bind(":email", $this->getEmail());
             $database->bind(":password", $this->getPassword());
             $row = $database->single();
+            $myLog = new Log();
             if($row){
                 $this->setID($row['id']);
-                $this->writeToLogAuthenticationSuccessful();
+                $myLog->setUserID($this->getID());
+                $myLog->setLabelicon('user');
+                $myLog->setLabeltype('success');
+                $myLog->setOperation('Authentication successful');
+                $myLog->writeToLog();
+                // $this->writeToLogAuthenticationSuccessful();
                 return true;
             }
             else{
-                if($this->findUserIdByMail()){
-                    $this->writeToLogAuthenticationFailed();
+                if($this->findGoogleUserIdByMail()){
+                    $myLog->setUserID($this->getID());
+                    $myLog->setLabelicon('user');
+                    $myLog->setLabeltype('danger');
+                    $myLog->setOperation('Registered Gmail user tried to authenticate with password');
+                    $myLog->writeToLog();
+                    return false;
+                }
+                else if($this->findUserIdByMail()){
+                    $myLog->setUserID($this->getID());
+                    $myLog->setLabelicon('user');
+                    $myLog->setLabeltype('danger');
+                    $myLog->setOperation('Authentication failed');
+                    $myLog->writeToLog();
+                    // $this->writeToLogAuthenticationFailed();
+                    return false;
                 }                
+                
                 return false;
             }
         }
@@ -136,6 +117,22 @@ class User {
         if($row){
             $this->setID($row['id']);
         return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public function findGoogleUserIdByMail(){
+        $database = new Database;
+        $database->query("SELECT id FROM Users WHERE email=:email AND password is NULL");
+        $database->bind(':email', $this->getEmail());
+        $row=$database->single();
+        if(substr($this->getEmail(), strpos($this->getEmail(), '@')+1, 5) === 'gmail'){
+            // return true;
+            if($row){
+                $this->setID($row['id']);
+                return true;
+            }
         }
         else{
             return false;
@@ -159,7 +156,13 @@ class User {
             $database->execute();
             $this->setID($database->lastInsertId());
 
-            $this->writeToLogRegistrationSuccessful();
+            $myLog = new Log();
+            $myLog->setUserID($this->getID());
+            $myLog->setLabelicon('user');
+            $myLog->setLabeltype('success');
+            $myLog->setOperation('Registration successful');
+            $myLog->writeToLog();
+            // $this->writeToLogRegistrationSuccessful();
             return true;
         }
         catch(Exception $e){
@@ -205,7 +208,13 @@ class User {
             $row = $database->single();
             if($row){
                 $this->setID($row['id']);
-                $this->writeToLogAuthenticationSuccessful();
+                $myLog = new Log();
+                $myLog->setUserID($this->getID());
+                $myLog->setLabelicon('user');
+                $myLog->setLabeltype('success');
+                $myLog->setOperation('Authentication successful');
+                $myLog->writeToLog();
+                // $this->writeToLogAuthenticationSuccessful();
                 return true;
             }
             else{
@@ -222,8 +231,16 @@ class User {
                 $database->execute();
                 $this->setID($database->lastInsertId());
 
-                $this->writeToLogRegistrationSuccessful();
-                $this->writeToLogAuthenticationSuccessful();
+                $myLog = new Log();
+                $myLog->setUserID($this->getID());
+                $myLog->setLabelicon('user');
+                $myLog->setLabeltype('success');
+                $myLog->setOperation('Registration successful');
+                $myLog->writeToLog();
+                // $this->writeToLogRegistrationSuccessful();
+                $myLog->setOperation('Authentication successful');
+                $myLog->writeToLog();
+                // $this->writeToLogAuthenticationSuccessful();
                 return true;
             }
         }
