@@ -8,15 +8,15 @@ if(!isset($_SESSION['id'])){
     // exit;
 }
 
-require_once('../../assets/php_includes/classes/database.class.php');
-require_once('../../assets/php_includes/classes/User.class.php');
+// require_once('../../assets/php_includes/classes/database.class.php');
+// require_once('../../assets/php_includes/classes/User.class.php');
 
-$user = new USER;
-$user->setID($_SESSION['id']);
-$user->getUser();
+// $user = new USER;
+// $user->setID($_SESSION['id']);
+// $user->getUser();
 ?>
 
-<!-- Welcome to the Dashboard <?=$user->getFirstName()?> <?=$user->getLastName()?>. -->
+<!-- Welcome to the Dashboard . -->
 <!-- <a href="../login/">Logout</a> -->
 
 <!DOCTYPE html>
@@ -35,17 +35,17 @@ $user->getUser();
 		<meta property="og:url" content="https://keenthemes.com/metronic" />
 		<meta property="og:site_name" content="Keenthemes | Metronic" />
 		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<link rel="shortcut icon" href="../../assets/media/logos/favicon.ico" />
 		<!--begin::Fonts(mandatory for all pages)-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Vendor Stylesheets(used for this page only)-->
-		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Vendor Stylesheets-->
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->
@@ -79,7 +79,7 @@ $user->getUser();
 						<!--begin::Mobile logo-->
 						<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
 							<a href="../../demo1/dist/index.html" class="d-lg-none">
-								<img alt="Logo" src="assets/media/logos/default-small.svg" class="h-30px" />
+								<img alt="Logo" src="../../assets/media/logos/default-small.svg" class="h-30px" />
 							</a>
 						</div>
 						<!--end::Mobile logo-->
@@ -755,7 +755,7 @@ $user->getUser();
 															<!--end:Col-->
 															<!--begin:Col-->
 															<div class="col-lg-4">
-																<img src="assets/media/stock/600x600/img-82.jpg" class="rounded mw-100" alt="" />
+																<img src="../../assets/media/stock/600x600/img-82.jpg" class="rounded mw-100" alt="" />
 															</div>
 															<!--end:Col-->
 														</div>
@@ -865,7 +865,7 @@ $user->getUser();
 															<!--end:Col-->
 															<!--begin:Col-->
 															<div class="col-lg-7">
-																<img src="assets/media/stock/900x600/46.jpg" class="rounded mw-100" alt="" />
+																<img src="../../assets/media/stock/900x600/46.jpg" class="rounded mw-100" alt="" />
 															</div>
 															<!--end:Col-->
 														</div>
@@ -1586,7 +1586,7 @@ $user->getUser();
 															<!--end:Col-->
 															<!--begin:Col-->
 															<div class="col-lg-5 pe-lg-5">
-																<img src="assets/media/stock/600x600/img-84.jpg" class="rounded mw-100" alt="" />
+																<img src="../../assets/media/stock/600x600/img-84.jpg" class="rounded mw-100" alt="" />
 															</div>
 															<!--end:Col-->
 														</div>
@@ -1657,7 +1657,7 @@ $user->getUser();
 															<!--end:Col-->
 															<!--begin:Col-->
 															<div class="col-lg-8">
-																<img src="assets/media/stock/900x600/44.jpg" class="rounded mw-100" alt="" />
+																<img src="../../assets/media/stock/900x600/44.jpg" class="rounded mw-100" alt="" />
 															</div>
 															<!--end:Col-->
 														</div>
@@ -3056,7 +3056,7 @@ $user->getUser();
 													<!--end:Col-->
 													<!--begin:Col-->
 													<div class="col-lg-6 mb-3 py-lg-3 pe-lg-8 d-flex align-items-center">
-														<img src="assets/media/stock/900x600/45.jpg" class="rounded mw-100" alt="" />
+														<img src="../../assets/media/stock/900x600/45.jpg" class="rounded mw-100" alt="" />
 													</div>
 													<!--end:Col-->
 												</div>
@@ -3241,7 +3241,7 @@ $user->getUser();
 														<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
-																<img src="assets/media/avatars/300-6.jpg" alt="" />
+																<img src="../../assets/media/avatars/300-6.jpg" alt="" />
 															</div>
 															<!--end::Symbol-->
 															<!--begin::Title-->
@@ -3256,7 +3256,7 @@ $user->getUser();
 														<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
-																<img src="assets/media/avatars/300-2.jpg" alt="" />
+																<img src="../../assets/media/avatars/300-2.jpg" alt="" />
 															</div>
 															<!--end::Symbol-->
 															<!--begin::Title-->
@@ -3271,7 +3271,7 @@ $user->getUser();
 														<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
-																<img src="assets/media/avatars/300-9.jpg" alt="" />
+																<img src="../../assets/media/avatars/300-9.jpg" alt="" />
 															</div>
 															<!--end::Symbol-->
 															<!--begin::Title-->
@@ -3286,7 +3286,7 @@ $user->getUser();
 														<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
-																<img src="assets/media/avatars/300-14.jpg" alt="" />
+																<img src="../../assets/media/avatars/300-14.jpg" alt="" />
 															</div>
 															<!--end::Symbol-->
 															<!--begin::Title-->
@@ -3301,7 +3301,7 @@ $user->getUser();
 														<a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
-																<img src="assets/media/avatars/300-11.jpg" alt="" />
+																<img src="../../assets/media/avatars/300-11.jpg" alt="" />
 															</div>
 															<!--end::Symbol-->
 															<!--begin::Title-->
@@ -3320,7 +3320,7 @@ $user->getUser();
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
 																<span class="symbol-label bg-light">
-																	<img class="w-20px h-20px" src="assets/media/svg/brand-logos/volicity-9.svg" alt="" />
+																	<img class="w-20px h-20px" src="../../assets/media/svg/brand-logos/volicity-9.svg" alt="" />
 																</span>
 															</div>
 															<!--end::Symbol-->
@@ -3337,7 +3337,7 @@ $user->getUser();
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
 																<span class="symbol-label bg-light">
-																	<img class="w-20px h-20px" src="assets/media/svg/brand-logos/tvit.svg" alt="" />
+																	<img class="w-20px h-20px" src="../../assets/media/svg/brand-logos/tvit.svg" alt="" />
 																</span>
 															</div>
 															<!--end::Symbol-->
@@ -3354,7 +3354,7 @@ $user->getUser();
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
 																<span class="symbol-label bg-light">
-																	<img class="w-20px h-20px" src="assets/media/svg/misc/infography.svg" alt="" />
+																	<img class="w-20px h-20px" src="../../assets/media/svg/misc/infography.svg" alt="" />
 																</span>
 															</div>
 															<!--end::Symbol-->
@@ -3371,7 +3371,7 @@ $user->getUser();
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
 																<span class="symbol-label bg-light">
-																	<img class="w-20px h-20px" src="assets/media/svg/brand-logos/leaf.svg" alt="" />
+																	<img class="w-20px h-20px" src="../../assets/media/svg/brand-logos/leaf.svg" alt="" />
 																</span>
 															</div>
 															<!--end::Symbol-->
@@ -3388,7 +3388,7 @@ $user->getUser();
 															<!--begin::Symbol-->
 															<div class="symbol symbol-40px me-4">
 																<span class="symbol-label bg-light">
-																	<img class="w-20px h-20px" src="assets/media/svg/brand-logos/tower.svg" alt="" />
+																	<img class="w-20px h-20px" src="../../assets/media/svg/brand-logos/tower.svg" alt="" />
 																</span>
 															</div>
 															<!--end::Symbol-->
@@ -3924,7 +3924,7 @@ $user->getUser();
 									<!--begin::Menu-->
 									<div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true">
 										<!--begin::Heading-->
-										<div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('assets/media/misc/menu-header-bg.jpg')">
+										<div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('../../assets/media/misc/menu-header-bg.jpg')">
 											<!--begin::Title-->
 											<h3 class="text-white fw-semibold px-9 mt-10 mb-6">Notifications
 											<span class="fs-8 opacity-75 ps-3">24 reports</span></h3>
@@ -4208,7 +4208,7 @@ $user->getUser();
 													<!--end::Section-->
 													<!--begin::Illustration-->
 													<div class="text-center px-4">
-														<img class="mw-100 mh-200px" alt="image" src="assets/media/illustrations/sketchy-1/1.png" />
+														<img class="mw-100 mh-200px" alt="image" src="../../assets/media/illustrations/sketchy-1/1.png" />
 													</div>
 													<!--end::Illustration-->
 												</div>
@@ -4592,7 +4592,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/amazon.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/amazon.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">AWS</span>
 															</a>
 														</div>
@@ -4600,7 +4600,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/angular-icon-1.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/angular-icon-1.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">AngularJS</span>
 															</a>
 														</div>
@@ -4608,7 +4608,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/atica.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/atica.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Atica</span>
 															</a>
 														</div>
@@ -4616,7 +4616,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/beats-electronics.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/beats-electronics.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Music</span>
 															</a>
 														</div>
@@ -4624,7 +4624,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/codeigniter.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/codeigniter.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Codeigniter</span>
 															</a>
 														</div>
@@ -4632,7 +4632,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/bootstrap-4.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/bootstrap-4.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Bootstrap</span>
 															</a>
 														</div>
@@ -4640,7 +4640,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/google-tag-manager.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/google-tag-manager.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">GTM</span>
 															</a>
 														</div>
@@ -4648,7 +4648,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/disqus.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/disqus.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Disqus</span>
 															</a>
 														</div>
@@ -4656,7 +4656,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/dribbble-icon-1.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Dribble</span>
 															</a>
 														</div>
@@ -4664,7 +4664,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/google-play-store.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/google-play-store.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Play Store</span>
 															</a>
 														</div>
@@ -4672,7 +4672,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/google-podcasts.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/google-podcasts.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Podcasts</span>
 															</a>
 														</div>
@@ -4680,7 +4680,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/figma-1.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/figma-1.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Figma</span>
 															</a>
 														</div>
@@ -4688,7 +4688,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/github.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/github.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Github</span>
 															</a>
 														</div>
@@ -4696,7 +4696,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/gitlab.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/gitlab.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Gitlab</span>
 															</a>
 														</div>
@@ -4704,7 +4704,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/instagram-2-1.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Instagram</span>
 															</a>
 														</div>
@@ -4712,7 +4712,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-4">
 															<a href="#" class="d-flex flex-column flex-center text-center text-gray-800 text-hover-primary bg-hover-light rounded py-4 px-3 mb-3">
-																<img src="assets/media/svg/brand-logos/pinterest-p.svg" class="w-25px h-25px mb-2" alt="" />
+																<img src="../../assets/media/svg/brand-logos/pinterest-p.svg" class="w-25px h-25px mb-2" alt="" />
 																<span class="fw-semibold">Pinterest</span>
 															</a>
 														</div>
@@ -4830,7 +4830,7 @@ $user->getUser();
 								<div class="app-navbar-item ms-1 ms-md-3" id="kt_header_user_menu_toggle">
 									<!--begin::Menu wrapper-->
 									<div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-										<img src="assets/media/avatars/300-1.jpg" alt="user" />
+										<img src="../../assets/media/avatars/300-1.jpg" alt="user" />
 									</div>
 									<!--begin::User account menu-->
 									<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
@@ -4839,7 +4839,7 @@ $user->getUser();
 											<div class="menu-content d-flex align-items-center px-3">
 												<!--begin::Avatar-->
 												<div class="symbol symbol-50px me-5">
-													<img alt="Logo" src="assets/media/avatars/300-1.jpg" />
+													<img alt="Logo" src="../../assets/media/avatars/300-1.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Username-->
@@ -4929,7 +4929,7 @@ $user->getUser();
 											<a href="#" class="menu-link px-5">
 												<span class="menu-title position-relative">Language
 												<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-												<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="" /></span></span>
+												<img class="w-15px h-15px rounded-1 ms-2" src="../../assets/media/flags/united-states.svg" alt="" /></span></span>
 											</a>
 											<!--begin::Menu sub-->
 											<div class="menu-sub menu-sub-dropdown w-175px py-4">
@@ -4937,7 +4937,7 @@ $user->getUser();
 												<div class="menu-item px-3">
 													<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5 active">
 													<span class="symbol symbol-20px me-4">
-														<img class="rounded-1" src="assets/media/flags/united-states.svg" alt="" />
+														<img class="rounded-1" src="../../assets/media/flags/united-states.svg" alt="" />
 													</span>English</a>
 												</div>
 												<!--end::Menu item-->
@@ -4945,7 +4945,7 @@ $user->getUser();
 												<div class="menu-item px-3">
 													<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 													<span class="symbol symbol-20px me-4">
-														<img class="rounded-1" src="assets/media/flags/spain.svg" alt="" />
+														<img class="rounded-1" src="../../assets/media/flags/spain.svg" alt="" />
 													</span>Spanish</a>
 												</div>
 												<!--end::Menu item-->
@@ -4953,7 +4953,7 @@ $user->getUser();
 												<div class="menu-item px-3">
 													<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 													<span class="symbol symbol-20px me-4">
-														<img class="rounded-1" src="assets/media/flags/germany.svg" alt="" />
+														<img class="rounded-1" src="../../assets/media/flags/germany.svg" alt="" />
 													</span>German</a>
 												</div>
 												<!--end::Menu item-->
@@ -4961,7 +4961,7 @@ $user->getUser();
 												<div class="menu-item px-3">
 													<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 													<span class="symbol symbol-20px me-4">
-														<img class="rounded-1" src="assets/media/flags/japan.svg" alt="" />
+														<img class="rounded-1" src="../../assets/media/flags/japan.svg" alt="" />
 													</span>Japanese</a>
 												</div>
 												<!--end::Menu item-->
@@ -4969,7 +4969,7 @@ $user->getUser();
 												<div class="menu-item px-3">
 													<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 													<span class="symbol symbol-20px me-4">
-														<img class="rounded-1" src="assets/media/flags/france.svg" alt="" />
+														<img class="rounded-1" src="../../assets/media/flags/france.svg" alt="" />
 													</span>French</a>
 												</div>
 												<!--end::Menu item-->
@@ -5022,8 +5022,8 @@ $user->getUser();
 						<div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
 							<!--begin::Logo image-->
 							<a href="../../demo1/dist/index.html">
-								<img alt="Logo" src="assets/media/logos/default-dark.svg" class="h-25px app-sidebar-logo-default" />
-								<img alt="Logo" src="assets/media/logos/default-small.svg" class="h-20px app-sidebar-logo-minimize" />
+								<img alt="Logo" src="../../assets/media/logos/default-dark.svg" class="h-25px app-sidebar-logo-default" />
+								<img alt="Logo" src="../../assets/media/logos/default-small.svg" class="h-20px app-sidebar-logo-minimize" />
 							</a>
 							<!--end::Logo image-->
 							<!--begin::Sidebar toggle-->
@@ -8619,7 +8619,7 @@ $user->getUser();
 										<!--begin::Col-->
 										<div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
 											<!--begin::Card widget 20-->
-											<div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-md-50 mb-5 mb-xl-10" style="background-color: #F1416C;background-image:url('assets/media/patterns/vector-1.png')">
+											<div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-md-50 mb-5 mb-xl-10" style="background-color: #F1416C;background-image:url('../../assets/media/patterns/vector-1.png')">
 												<!--begin::Header-->
 												<div class="card-header pt-5">
 													<!--begin::Title-->
@@ -8678,19 +8678,19 @@ $user->getUser();
 															<span class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
 														</div>
 														<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Michael Eberon">
-															<img alt="Pic" src="assets/media/avatars/300-11.jpg" />
+															<img alt="Pic" src="../../assets/media/avatars/300-11.jpg" />
 														</div>
 														<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Susan Redwood">
 															<span class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
 														</div>
 														<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Melody Macy">
-															<img alt="Pic" src="assets/media/avatars/300-2.jpg" />
+															<img alt="Pic" src="../../assets/media/avatars/300-2.jpg" />
 														</div>
 														<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Perry Matthew">
 															<span class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
 														</div>
 														<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Barry Walter">
-															<img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+															<img alt="Pic" src="../../assets/media/avatars/300-12.jpg" />
 														</div>
 														<a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
 															<span class="symbol-label bg-dark text-gray-300 fs-8 fw-bold">+42</span>
@@ -8965,7 +8965,7 @@ $user->getUser();
 											<!--begin::Engage widget 10-->
 											<div class="card card-flush h-md-100">
 												<!--begin::Body-->
-												<div class="card-body d-flex flex-column justify-content-between mt-9 bgi-no-repeat bgi-size-cover bgi-position-x-center pb-0" style="background-position: 100% 50%; background-image:url('assets/media/stock/900x600/42.png')">
+												<div class="card-body d-flex flex-column justify-content-between mt-9 bgi-no-repeat bgi-size-cover bgi-position-x-center pb-0" style="background-position: 100% 50%; background-image:url('../../assets/media/stock/900x600/42.png')">
 													<!--begin::Wrapper-->
 													<div class="mb-10">
 														<!--begin::Title-->
@@ -8987,8 +8987,8 @@ $user->getUser();
 													</div>
 													<!--begin::Wrapper-->
 													<!--begin::Illustration-->
-													<img class="mx-auto h-150px h-lg-200px theme-light-show" src="assets/media/illustrations/misc/upgrade.svg" alt="" />
-													<img class="mx-auto h-150px h-lg-200px theme-dark-show" src="assets/media/illustrations/misc/upgrade-dark.svg" alt="" />
+													<img class="mx-auto h-150px h-lg-200px theme-light-show" src="../../assets/media/illustrations/misc/upgrade.svg" alt="" />
+													<img class="mx-auto h-150px h-lg-200px theme-dark-show" src="../../assets/media/illustrations/misc/upgrade-dark.svg" alt="" />
 													<!--end::Illustration-->
 												</div>
 												<!--end::Body-->
@@ -9471,7 +9471,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-3.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-3.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Guy Hawkins</a>
@@ -9502,7 +9502,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-2.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-2.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jane Cooper</a>
@@ -9533,7 +9533,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-9.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-9.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
@@ -9564,7 +9564,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-7.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-7.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Cody Fishers</a>
@@ -9621,7 +9621,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-25.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-25.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Brooklyn Simmons</a>
@@ -9652,7 +9652,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-24.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-24.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Esther Howard</a>
@@ -9683,7 +9683,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-20.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-20.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Annette Black</a>
@@ -9714,7 +9714,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-17.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-17.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Marvin McKinney</a>
@@ -9771,7 +9771,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-11.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-11.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
@@ -9802,7 +9802,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-23.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-23.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Ronald Richards</a>
@@ -9833,7 +9833,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-4.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-4.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Leslie Alexander</a>
@@ -9864,7 +9864,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-1.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-1.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Courtney Henry</a>
@@ -9921,7 +9921,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-12.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-12.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Arlene McCoy</a>
@@ -9952,7 +9952,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-21.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-21.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Marvin McKinneyr</a>
@@ -9983,7 +9983,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-30.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-30.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
@@ -10014,7 +10014,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-14.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-14.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Esther Howard</a>
@@ -10071,7 +10071,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-6.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-6.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jane Cooper</a>
@@ -10102,7 +10102,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-10.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-10.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Esther Howard</a>
@@ -10133,7 +10133,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-9.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-9.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
@@ -10164,7 +10164,7 @@ $user->getUser();
 																			<td>
 																				<div class="d-flex align-items-center">
 																					<div class="symbol symbol-50px me-3">
-																						<img src="assets/media/avatars/300-3.jpg" class="" alt="" />
+																						<img src="../../assets/media/avatars/300-3.jpg" class="" alt="" />
 																					</div>
 																					<div class="d-flex justify-content-start flex-column">
 																						<a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Ralph Edwards</a>
@@ -10223,7 +10223,7 @@ $user->getUser();
 														<!--begin::Col-->
 														<div class="col-sm-6 mb-10 mb-sm-0">
 															<!--begin::Image-->
-															<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-400px min-h-sm-100 h-100" style="background-size: 100% 100%;background-image:url('assets/media/stock/600x600/img-65.jpg')"></div>
+															<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-400px min-h-sm-100 h-100" style="background-size: 100% 100%;background-image:url('../../assets/media/stock/600x600/img-65.jpg')"></div>
 															<!--end::Image-->
 														</div>
 														<!--end::Col-->
@@ -10250,7 +10250,7 @@ $user->getUser();
 																		<div class="d-flex align-items-center me-5 me-xl-13">
 																			<!--begin::Symbol-->
 																			<div class="symbol symbol-30px symbol-circle me-3">
-																				<img src="assets/media/avatars/300-3.jpg" class="" alt="" />
+																				<img src="../../assets/media/avatars/300-3.jpg" class="" alt="" />
 																			</div>
 																			<!--end::Symbol-->
 																			<!--begin::Info-->
@@ -10326,10 +10326,10 @@ $user->getUser();
 																	<!--begin::Users group-->
 																	<div class="symbol-group symbol-hover flex-nowrap">
 																		<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Melody Macy">
-																			<img alt="Pic" src="assets/media/avatars/300-2.jpg" />
+																			<img alt="Pic" src="../../assets/media/avatars/300-2.jpg" />
 																		</div>
 																		<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Michael Eberon">
-																			<img alt="Pic" src="assets/media/avatars/300-3.jpg" />
+																			<img alt="Pic" src="../../assets/media/avatars/300-3.jpg" />
 																		</div>
 																		<div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Susan Redwood">
 																			<span class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
@@ -10930,7 +10930,7 @@ $user->getUser();
 																	<td>
 																		<div class="d-flex align-items-center">
 																			<div class="symbol symbol-50px me-3">
-																				<img src="assets/media/stock/600x600/img-49.jpg" class="" alt="" />
+																				<img src="../../assets/media/stock/600x600/img-49.jpg" class="" alt="" />
 																			</div>
 																			<div class="d-flex justify-content-start flex-column">
 																				<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Mivy App</a>
@@ -10977,7 +10977,7 @@ $user->getUser();
 																	<td>
 																		<div class="d-flex align-items-center">
 																			<div class="symbol symbol-50px me-3">
-																				<img src="assets/media/stock/600x600/img-40.jpg" class="" alt="" />
+																				<img src="../../assets/media/stock/600x600/img-40.jpg" class="" alt="" />
 																			</div>
 																			<div class="d-flex justify-content-start flex-column">
 																				<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Avionica</a>
@@ -11024,7 +11024,7 @@ $user->getUser();
 																	<td>
 																		<div class="d-flex align-items-center">
 																			<div class="symbol symbol-50px me-3">
-																				<img src="assets/media/stock/600x600/img-39.jpg" class="" alt="" />
+																				<img src="../../assets/media/stock/600x600/img-39.jpg" class="" alt="" />
 																			</div>
 																			<div class="d-flex justify-content-start flex-column">
 																				<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Charto CRM</a>
@@ -11071,7 +11071,7 @@ $user->getUser();
 																	<td>
 																		<div class="d-flex align-items-center">
 																			<div class="symbol symbol-50px me-3">
-																				<img src="assets/media/stock/600x600/img-47.jpg" class="" alt="" />
+																				<img src="../../assets/media/stock/600x600/img-47.jpg" class="" alt="" />
 																			</div>
 																			<div class="d-flex justify-content-start flex-column">
 																				<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Tower Hill</a>
@@ -11118,7 +11118,7 @@ $user->getUser();
 																	<td>
 																		<div class="d-flex align-items-center">
 																			<div class="symbol symbol-50px me-3">
-																				<img src="assets/media/stock/600x600/img-48.jpg" class="" alt="" />
+																				<img src="../../assets/media/stock/600x600/img-48.jpg" class="" alt="" />
 																			</div>
 																			<div class="d-flex justify-content-start flex-column">
 																				<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">9 Degree</a>
@@ -11418,7 +11418,7 @@ $user->getUser();
 											<!--end::Info-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-												<img src="assets/media/avatars/300-14.jpg" alt="img" />
+												<img src="../../assets/media/avatars/300-14.jpg" alt="img" />
 											</div>
 											<!--end::User-->
 										</div>
@@ -11441,12 +11441,12 @@ $user->getUser();
 											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
-													<img src="assets/media/avatars/300-2.jpg" alt="img" />
+													<img src="../../assets/media/avatars/300-2.jpg" alt="img" />
 												</div>
 												<!--end::User-->
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
-													<img src="assets/media/avatars/300-14.jpg" alt="img" />
+													<img src="../../assets/media/avatars/300-14.jpg" alt="img" />
 												</div>
 												<!--end::User-->
 												<!--begin::User-->
@@ -11480,7 +11480,7 @@ $user->getUser();
 											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
-													<img src="assets/media/avatars/300-20.jpg" alt="img" />
+													<img src="../../assets/media/avatars/300-20.jpg" alt="img" />
 												</div>
 												<!--end::User-->
 												<!--begin::User-->
@@ -11539,7 +11539,7 @@ $user->getUser();
 											<!--end::Info-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
-												<img src="assets/media/avatars/300-1.jpg" alt="img" />
+												<img src="../../assets/media/avatars/300-1.jpg" alt="img" />
 											</div>
 											<!--end::User-->
 										</div>
@@ -11583,7 +11583,7 @@ $user->getUser();
 											<!--end::Info-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
-												<img src="assets/media/avatars/300-23.jpg" alt="img" />
+												<img src="../../assets/media/avatars/300-23.jpg" alt="img" />
 											</div>
 											<!--end::User-->
 										</div>
@@ -11596,7 +11596,7 @@ $user->getUser();
 											<!--begin::Item-->
 											<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
 												<!--begin::Icon-->
-												<img alt="" class="w-30px me-3" src="assets/media/svg/files/pdf.svg" />
+												<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/pdf.svg" />
 												<!--end::Icon-->
 												<!--begin::Info-->
 												<div class="ms-1 fw-semibold">
@@ -11613,7 +11613,7 @@ $user->getUser();
 											<!--begin::Item-->
 											<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
 												<!--begin::Icon-->
-												<img alt="../../demo1/dist/apps/projects/project.html" class="w-30px me-3" src="assets/media/svg/files/doc.svg" />
+												<img alt="../../demo1/dist/apps/projects/project.html" class="w-30px me-3" src="../../assets/media/svg/files/doc.svg" />
 												<!--end::Icon-->
 												<!--begin::Info-->
 												<div class="ms-1 fw-semibold">
@@ -11630,7 +11630,7 @@ $user->getUser();
 											<!--begin::Item-->
 											<div class="d-flex flex-aligns-center">
 												<!--begin::Icon-->
-												<img alt="../../demo1/dist/apps/projects/project.html" class="w-30px me-3" src="assets/media/svg/files/css.svg" />
+												<img alt="../../demo1/dist/apps/projects/project.html" class="w-30px me-3" src="../../assets/media/svg/files/css.svg" />
 												<!--end::Icon-->
 												<!--begin::Info-->
 												<div class="ms-1 fw-semibold">
@@ -11686,7 +11686,7 @@ $user->getUser();
 											<!--end::Info-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-												<img src="assets/media/avatars/300-14.jpg" alt="img" />
+												<img src="../../assets/media/avatars/300-14.jpg" alt="img" />
 											</div>
 											<!--end::User-->
 										</div>
@@ -11730,7 +11730,7 @@ $user->getUser();
 											<!--end::Info-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
-												<img src="assets/media/avatars/300-2.jpg" alt="img" />
+												<img src="../../assets/media/avatars/300-2.jpg" alt="img" />
 											</div>
 											<!--end::User-->
 										</div>
@@ -11744,7 +11744,7 @@ $user->getUser();
 											<div class="overlay me-10">
 												<!--begin::Image-->
 												<div class="overlay-wrapper">
-													<img alt="img" class="rounded w-150px" src="assets/media/stock/600x400/img-29.jpg" />
+													<img alt="img" class="rounded w-150px" src="../../assets/media/stock/600x400/img-29.jpg" />
 												</div>
 												<!--end::Image-->
 												<!--begin::Link-->
@@ -11758,7 +11758,7 @@ $user->getUser();
 											<div class="overlay me-10">
 												<!--begin::Image-->
 												<div class="overlay-wrapper">
-													<img alt="img" class="rounded w-150px" src="assets/media/stock/600x400/img-31.jpg" />
+													<img alt="img" class="rounded w-150px" src="../../assets/media/stock/600x400/img-31.jpg" />
 												</div>
 												<!--end::Image-->
 												<!--begin::Link-->
@@ -11772,7 +11772,7 @@ $user->getUser();
 											<div class="overlay">
 												<!--begin::Image-->
 												<div class="overlay-wrapper">
-													<img alt="img" class="rounded w-150px" src="assets/media/stock/600x400/img-40.jpg" />
+													<img alt="img" class="rounded w-150px" src="../../assets/media/stock/600x400/img-40.jpg" />
 												</div>
 												<!--end::Image-->
 												<!--begin::Link-->
@@ -11869,7 +11869,7 @@ $user->getUser();
 											<!--end::Info-->
 											<!--begin::User-->
 											<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
-												<img src="assets/media/avatars/300-4.jpg" alt="img" />
+												<img src="../../assets/media/avatars/300-4.jpg" alt="img" />
 											</div>
 											<!--end::User-->
 										</div>
@@ -12087,7 +12087,7 @@ $user->getUser();
 								<div class="d-flex align-items-center mb-2">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -12119,7 +12119,7 @@ $user->getUser();
 									<!--end::Details-->
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 									</div>
 									<!--end::Avatar-->
 								</div>
@@ -12139,7 +12139,7 @@ $user->getUser();
 								<div class="d-flex align-items-center mb-2">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -12171,7 +12171,7 @@ $user->getUser();
 									<!--end::Details-->
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 									</div>
 									<!--end::Avatar-->
 								</div>
@@ -12191,7 +12191,7 @@ $user->getUser();
 								<div class="d-flex align-items-center mb-2">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -12224,7 +12224,7 @@ $user->getUser();
 									<!--end::Details-->
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 									</div>
 									<!--end::Avatar-->
 								</div>
@@ -12244,7 +12244,7 @@ $user->getUser();
 								<div class="d-flex align-items-center mb-2">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -12276,7 +12276,7 @@ $user->getUser();
 									<!--end::Details-->
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 									</div>
 									<!--end::Avatar-->
 								</div>
@@ -12296,7 +12296,7 @@ $user->getUser();
 								<div class="d-flex align-items-center mb-2">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+										<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -12415,7 +12415,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-1.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-1.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12463,7 +12463,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-3.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-3.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12511,7 +12511,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-8.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-8.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12559,7 +12559,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-26.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-26.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12607,7 +12607,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-21.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-21.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12655,7 +12655,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-34.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-34.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12703,7 +12703,7 @@ $user->getUser();
 						<!--end::Wrapper-->
 						<!--begin::Pic-->
 						<div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-							<img src="assets/media/stock/600x400/img-27.jpg" alt="" />
+							<img src="../../assets/media/stock/600x400/img-27.jpg" alt="" />
 						</div>
 						<!--end::Pic-->
 					</div>
@@ -12834,7 +12834,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-success rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo1/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo1/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo1/index.html" class="btn btn-sm btn-success shadow">Metronic Original</a>
@@ -12848,7 +12848,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo2/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo2/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo2/index.html" class="btn btn-sm btn-success shadow">SaaS App</a>
@@ -12862,7 +12862,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo6/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo6/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo6/index.html" class="btn btn-sm btn-success shadow">POS System</a>
@@ -12876,7 +12876,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo3/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo3/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo3/index.html" class="btn btn-sm btn-success shadow">New Trend</a>
@@ -12890,7 +12890,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo8/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo8/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo8/index.html" class="btn btn-sm btn-success shadow">Analytics App</a>
@@ -12904,7 +12904,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo10/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo10/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo10/index.html" class="btn btn-sm btn-success shadow">Project Grid</a>
@@ -12918,7 +12918,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo11/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo11/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo11/index.html" class="btn btn-sm btn-success shadow">Finance Planner</a>
@@ -12932,7 +12932,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo4/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo4/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo4/index.html" class="btn btn-sm btn-success shadow">Jobs Site</a>
@@ -12946,7 +12946,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo27/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo27/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo27/index.html" class="btn btn-sm btn-success shadow">Databox Dashboard</a>
@@ -12960,7 +12960,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo20/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo20/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo20/index.html" class="btn btn-sm btn-success shadow">CRM Software</a>
@@ -12974,7 +12974,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo25/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo25/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo25/index.html" class="btn btn-sm btn-success shadow">User Guiding App</a>
@@ -12988,7 +12988,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo30/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo30/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo30/index.html" class="btn btn-sm btn-success shadow">Sales Tracking App</a>
@@ -13002,7 +13002,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo23/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo23/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo23/index.html" class="btn btn-sm btn-success shadow">Member Dashboard</a>
@@ -13016,7 +13016,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo29/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo29/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo29/index.html" class="btn btn-sm btn-success shadow">Project Workspace</a>
@@ -13030,7 +13030,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo14/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo14/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo14/index.html" class="btn btn-sm btn-success shadow">Project Workplace</a>
@@ -13044,7 +13044,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo24/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo24/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo24/index.html" class="btn btn-sm btn-success shadow">Helpdesk App</a>
@@ -13058,7 +13058,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo26/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo26/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo26/index.html" class="btn btn-sm btn-success shadow">Planable App</a>
@@ -13072,7 +13072,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo7/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo7/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo7/index.html" class="btn btn-sm btn-success shadow">CRM Dashboard</a>
@@ -13086,7 +13086,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo22/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo22/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo22/index.html" class="btn btn-sm btn-success shadow">Media Publisher</a>
@@ -13100,7 +13100,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo28/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo28/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo28/index.html" class="btn btn-sm btn-success shadow">eCommerce App</a>
@@ -13114,7 +13114,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo19/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo19/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo19/index.html" class="btn btn-sm btn-success shadow">Reports Panel</a>
@@ -13128,7 +13128,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo9/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo9/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo9/index.html" class="btn btn-sm btn-success shadow">Sales Manager</a>
@@ -13142,7 +13142,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo13/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo13/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo13/index.html" class="btn btn-sm btn-success shadow">Classic Dashboard</a>
@@ -13156,7 +13156,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo16/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo16/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo16/index.html" class="btn btn-sm btn-success shadow">Podcast App</a>
@@ -13170,7 +13170,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo18/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo18/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo18/index.html" class="btn btn-sm btn-success shadow">Goal Tracking</a>
@@ -13184,7 +13184,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo21/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo21/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo21/index.html" class="btn btn-sm btn-success shadow">Monochrome App</a>
@@ -13198,7 +13198,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo12/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo12/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo12/index.html" class="btn btn-sm btn-success shadow">Data Analyzer</a>
@@ -13212,7 +13212,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo17/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo17/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo17/index.html" class="btn btn-sm btn-success shadow">Events Scheduler</a>
@@ -13226,7 +13226,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo15/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo15/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo15/index.html" class="btn btn-sm btn-success shadow">Crypto Planner</a>
@@ -13240,7 +13240,7 @@ $user->getUser();
 										<!--begin::Demo-->
 										<div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
 											<div class="overlay-wrapper">
-												<img src="assets/media/preview/demos/demo5/light-ltr.png" alt="demo" class="w-100" />
+												<img src="../../assets/media/preview/demos/demo5/light-ltr.png" alt="demo" class="w-100" />
 											</div>
 											<div class="overlay-layer bg-dark bg-opacity-10">
 												<a href="https://preview.keenthemes.com/metronic8/demo5/index.html" class="btn btn-sm btn-success shadow">Support Forum</a>
@@ -14685,9 +14685,9 @@ $user->getUser();
 													<!--end::Input-->
 													<!--begin::Card logos-->
 													<div class="position-absolute translate-middle-y top-50 end-0 me-5">
-														<img src="assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
-														<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
-														<img src="assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
+														<img src="../../assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
+														<img src="../../assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
+														<img src="../../assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
 													</div>
 													<!--end::Card logos-->
 												</div>
@@ -14805,7 +14805,7 @@ $user->getUser();
 											<!--end::Description-->
 											<!--begin::Illustration-->
 											<div class="text-center px-4 py-15">
-												<img src="assets/media/illustrations/sketchy-1/9.png" alt="" class="mw-100 mh-300px" />
+												<img src="../../assets/media/illustrations/sketchy-1/9.png" alt="" class="mw-100 mh-300px" />
 											</div>
 											<!--end::Illustration-->
 										</div>
@@ -15084,7 +15084,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-6.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15152,7 +15152,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15186,7 +15186,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-5.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-5.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15220,7 +15220,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15288,7 +15288,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-9.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-9.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15390,7 +15390,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-23.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-23.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15458,7 +15458,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-12.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -15630,7 +15630,7 @@ $user->getUser();
 										<a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
 											<!--begin::Avatar-->
 											<div class="symbol symbol-35px symbol-circle me-5">
-												<img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+												<img alt="Pic" src="../../assets/media/avatars/300-6.jpg" />
 											</div>
 											<!--end::Avatar-->
 											<!--begin::Info-->
@@ -15660,7 +15660,7 @@ $user->getUser();
 										<a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
 											<!--begin::Avatar-->
 											<div class="symbol symbol-35px symbol-circle me-5">
-												<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+												<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 											</div>
 											<!--end::Avatar-->
 											<!--begin::Info-->
@@ -15675,7 +15675,7 @@ $user->getUser();
 										<a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
 											<!--begin::Avatar-->
 											<div class="symbol symbol-35px symbol-circle me-5">
-												<img alt="Pic" src="assets/media/avatars/300-5.jpg" />
+												<img alt="Pic" src="../../assets/media/avatars/300-5.jpg" />
 											</div>
 											<!--end::Avatar-->
 											<!--begin::Info-->
@@ -15690,7 +15690,7 @@ $user->getUser();
 										<a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
 											<!--begin::Avatar-->
 											<div class="symbol symbol-35px symbol-circle me-5">
-												<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+												<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 											</div>
 											<!--end::Avatar-->
 											<!--begin::Info-->
@@ -15720,7 +15720,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-6.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -15792,7 +15792,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -15828,7 +15828,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-5.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-5.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -15864,7 +15864,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -15936,7 +15936,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-9.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-9.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -16044,7 +16044,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-23.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-23.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -16116,7 +16116,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-12.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -16188,7 +16188,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-13.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-13.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -16260,7 +16260,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-21.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-21.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -16296,7 +16296,7 @@ $user->getUser();
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+													<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
@@ -16338,7 +16338,7 @@ $user->getUser();
 									<!--end::Message-->
 									<!--begin::Illustration-->
 									<div class="text-center px-5">
-										<img src="assets/media/illustrations/sketchy-1/1.png" alt="" class="w-100 h-200px h-sm-325px" />
+										<img src="../../assets/media/illustrations/sketchy-1/1.png" alt="" class="w-100 h-200px h-sm-325px" />
 									</div>
 									<!--end::Illustration-->
 								</div>
@@ -16392,7 +16392,7 @@ $user->getUser();
 						<!--end::Heading-->
 						<!--begin::Google Contacts Invite-->
 						<div class="btn btn-light-primary fw-bold w-100 mb-8">
-						<img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />Invite Gmail Contacts</div>
+						<img alt="Logo" src="../../assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />Invite Gmail Contacts</div>
 						<!--end::Google Contacts Invite-->
 						<!--begin::Separator-->
 						<div class="separator d-flex flex-center mb-8">
@@ -16415,7 +16415,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-6.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16471,7 +16471,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-1.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16499,7 +16499,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-5.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-5.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16527,7 +16527,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-25.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16583,7 +16583,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-9.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-9.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16667,7 +16667,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-23.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-23.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16723,7 +16723,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-12.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16779,7 +16779,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-13.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-13.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16835,7 +16835,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-21.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-21.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16863,7 +16863,7 @@ $user->getUser();
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/300-9.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/300-9.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
@@ -16915,13 +16915,13 @@ $user->getUser();
 		<!--end::Modal - Invite Friend-->
 		<!--end::Modals-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "assets/";</script>
+		<script>var hostUrl = "../../assets/";</script>
 		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="assets/js/scripts.bundle.js"></script>
+		<script src="../../assets/plugins/global/plugins.bundle.js"></script>
+		<script src="../../assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Vendors Javascript(used for this page only)-->
-		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+		<script src="../../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
 		<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
 		<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 		<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
@@ -16933,16 +16933,16 @@ $user->getUser();
 		<script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
 		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
 		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-		<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<script src="../../assets/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Vendors Javascript-->
 		<!--begin::Custom Javascript(used for this page only)-->
-		<script src="assets/js/widgets.bundle.js"></script>
-		<script src="assets/js/custom/widgets.js"></script>
-		<script src="assets/js/custom/apps/chat/chat.js"></script>
-		<script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-		<script src="assets/js/custom/utilities/modals/create-app.js"></script>
-		<script src="assets/js/custom/utilities/modals/new-target.js"></script>
-		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
+		<script src="../../assets/js/widgets.bundle.js"></script>
+		<script src="../../assets/js/custom/widgets.js"></script>
+		<script src="../../assets/js/custom/apps/chat/chat.js"></script>
+		<script src="../../assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+		<script src="../../assets/js/custom/utilities/modals/create-app.js"></script>
+		<script src="../../assets/js/custom/utilities/modals/new-target.js"></script>
+		<script src="../../assets/js/custom/utilities/modals/users-search.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
