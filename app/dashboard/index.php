@@ -18,4 +18,3 @@ $user->getUser();
 
 Welcome to the Dashboard <?=$user->getFirstName()?> <?=$user->getLastName()?>.
 <a href="../login/">Logout</a>
-
