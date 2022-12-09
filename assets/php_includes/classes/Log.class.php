@@ -55,4 +55,23 @@ class Log {
     $database->bind(':operation', $this->getOperation());
     $database->execute();
   }
+
+  public function getUserLogsLast30Days(){
+    $database = new Database;
+    $database ->query('
+    SELECT 
+      labelicon, labeltype, operation, timestamp 
+    FROM 
+      log_operations 
+    WHERE 
+      userID=:userID 
+      and timestamp > NOW() - INTERVAL 1 MONTH
+    ORDER BY 
+      id DESC;
+    ');
+    $database->bind(':userID', $this->getUserID());
+    return $database->resultset();
+  }
+
+
 }

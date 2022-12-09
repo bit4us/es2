@@ -1,6 +1,16 @@
 <?php
+require_once('../../assets/php_includes/classes/database.class.php');
+require_once('../../assets/php_includes/classes/User.class.php');
 
 session_start();
+
+
+if(isset($_SESSION['id'])){
+	$user = new USER;
+	$user->setID($_SESSION['id']);
+	$user->getUser();
+	$user->signoutUser();
+}
 
 $_SESSION = array();
 session_destroy();

@@ -172,6 +172,16 @@ class User {
 
     }
 
+    public function signoutUser(){
+        $database = new Database;
+        $myLog = new Log();
+        $myLog->setUserID($this->getID());
+        $myLog->setLabelicon('user');
+        $myLog->setLabeltype('success');
+        $myLog->setOperation('Signout successful');
+        $myLog->writeToLog();
+    }
+
     public function getUser(){
         $database = new Database;
         try{
