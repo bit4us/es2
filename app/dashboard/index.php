@@ -87,77 +87,37 @@ $user->getUser();
 									<div class="row g-5 g-xl-10 mb-5 mb-xl-10">
 										<!--begin::Col-->
 										<div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
-											<?php include_once '../../assets/php_includes/widgets/__active__projects.php'; ?>
-											<?php include_once '../../assets/php_includes/widgets/__professionals.php'; ?>
+											<?php include_once '../../assets/php_includes/widgets/__active__pathways.php'; ?>
+											<?php include_once '../../assets/php_includes/widgets/__members.php'; ?>
 										</div>
 										<!--end::Col-->
 										<!--begin::Col-->
 										<div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
-											<?php include_once '../../assets/php_includes/widgets/__projects__earnings.php'; ?>
+											<?php include_once '../../assets/php_includes/widgets/__speech__requests.php'; ?>
 											<?php include_once '../../assets/php_includes/widgets/__external__links.php'; ?>
 										</div>
 										<!--end::Col-->
 										<!--begin::Col-->
 										<div class="col-xxl-6">
-											<?php include_once '../../assets/php_includes/widgets/__engage.php'; ?>
+											<?php include_once '../../assets/php_includes/widgets/__next__meeting.php'; ?>
 										</div>
 										<!--end::Col-->
 									</div>
 									<!--end::Row-->
 									<!--begin::Row-->
-									<div class="row gx-5 gx-xl-10">
-										<!--begin::Col-->
-										<div class="col-xxl-6 mb-5 mb-xl-10">
-											<?php include_once '../../assets/php_includes/widgets/__performance__overview.php'; ?>
+									<div class="row g-5 g-xl-8">
+										<div class="col-xl-3">
+											<?php include '../../assets/php_includes/widgets/__info__club.php'; ?>
 										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-xl-6 mb-5 mb-xl-10">
-											<?php include_once '../../assets/php_includes/widgets/__authors__achievements.php'; ?>
+										<div class="col-xl-3">
+											<?php include '../../assets/php_includes/widgets/__info__area.php'; ?>
 										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-									<!--begin::Row-->
-									<div class="row g-5 g-xl-10 mb-5 mb-xl-10">
-										<!--begin::Col-->
-										<div class="col-xxl-6">
-											<?php include_once '../../assets/php_includes/widgets/__featured.php'; ?>
+										<div class="col-xl-3">
+											<?php include '../../assets/php_includes/widgets/__info__division.php'; ?>
 										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-xl-6">
-											<?php include_once '../../assets/php_includes/widgets/__chart__performance.php'; ?>
+										<div class="col-xl-3">
+											<?php include '../../assets/php_includes/widgets/__info__district.php'; ?>
 										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-									<!--begin::Row-->
-									<div class="row g-5 g-xl-10 mb-5 mb-xl-10">
-										<!--begin::Col-->
-										<div class="col-xl-4">
-											<?php include_once '../../assets/php_includes/widgets/__chart__earnings.php';?>
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-xl-8">
-											<?php include_once '../../assets/php_includes/widgets/__project__stats.php';?>
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-									<!--begin::Row-->
-									<div class="row gx-5 gx-xl-10">
-										<!--begin::Col-->
-										<div class="col-xl-4">
-											<?php include_once '../../assets/php_includes/widgets/__warephase__stats.php';?>
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-xl-8">
-											<?php include_once '../../assets/php_includes/widgets/__human__resources.php';?>
-										</div>
-										<!--end::Col-->
 									</div>
 									<!--end::Row-->
 								</div>

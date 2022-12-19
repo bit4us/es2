@@ -43,7 +43,7 @@ $message= "";
 					<div class="d-flex flex-center flex-lg-start flex-column">
 						<!--begin::Logo-->
 						<a href="/home/" class="mb-7">
-							<img alt="Logo" src="assets/media/logos/ES-red-yellow.svg" style="height:120px"/>
+							<img alt="Logo" src="../../assets/media/logos/ES-red-yellow.svg" style="height:120px"/>
 							<h1>Easy Speak 2.0</h1>
 						</a>
 						<!--end::Logo-->
@@ -129,7 +129,7 @@ $message= "";
 								<!--end::Input group=-->
 								<div class="fv-row mb-3">
 									<!--begin::Password-->
-									<input type="password" placeholder="Password" name="password" id="email" autocomplete="off" class="form-control bg-transparent" />
+									<input type="password" placeholder="Password" name="password" id="password" autocomplete="off" class="form-control bg-transparent" />
 									<!--end::Password-->
 								</div>
 								<!--end::Input group=-->

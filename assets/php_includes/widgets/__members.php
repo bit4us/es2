@@ -5,10 +5,10 @@
     <!--begin::Title-->
     <div class="card-title d-flex flex-column">
       <!--begin::Amount-->
-      <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">357</span>
+      <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">23</span>
       <!--end::Amount-->
       <!--begin::Subtitle-->
-      <span class="text-gray-400 pt-1 fw-semibold fs-6">Professionals</span>
+      <span class="text-gray-400 pt-1 fw-semibold fs-6">Members</span>
       <!--end::Subtitle-->
     </div>
     <!--end::Title-->
@@ -17,7 +17,7 @@
   <!--begin::Card body-->
   <div class="card-body d-flex flex-column justify-content-end pe-0">
     <!--begin::Title-->
-    <span class="fs-6 fw-bolder text-gray-800 d-block mb-2">Today’s Heroes</span>
+    <span class="fs-6 fw-bolder text-gray-800 d-block mb-2">Club Officers</span>
     <!--end::Title-->
     <!--begin::Users group-->
     <div class="symbol-group symbol-hover flex-nowrap">
@@ -39,8 +39,11 @@
       <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Barry Walter">
         <img alt="Pic" src="../../assets/media/avatars/300-12.jpg" />
       </div>
+      <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Martin Blackthorn">
+        <span class="symbol-label bg-danger text-inverse-danger fw-bold">M</span>
+      </div>
       <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
-        <span class="symbol-label bg-dark text-gray-300 fs-8 fw-bold">+42</span>
+        <span class="symbol-label bg-dark text-gray-300 fs-8 fw-bold">+16</span>
       </a>
     </div>
     <!--end::Users group-->
