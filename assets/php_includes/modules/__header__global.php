@@ -4,7 +4,7 @@
 	<!--begin::Head-->
 	<head>
 		<!-- <base href="../../../"/> -->
-		<title>Easy speak 2.0 - The new Toastmasters club management experience</title>
+		<title>Easy speak 2.0 - The new club management experience</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />

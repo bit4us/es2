@@ -3,7 +3,7 @@
 include_once('Log.class.php');
 
 class User {
-    private $id, $email, $password, $firstName, $lastName, $avatar, $session, $registrationDate;
+    private $id, $email, $password, $firstName, $lastName, $avatar, $session, $registrationDate, $acl; 
 
     public function setID($id){
         $this->id=$id;
@@ -53,6 +53,13 @@ class User {
     public function getRegistrationDate(){
         return $this->registrationDate;
     }
+    public function setAcl($acl){
+        $this->acl=$acl;
+    }
+    public function getAcl(){
+        return $this->acl;
+    }
+
 
     private function generateCode($length){
         $chars = "vwxyzABCD0123456";
@@ -187,11 +194,15 @@ class User {
         try{
             $database->query('
                 SELECT 
-                    email, firstName, lastName, avatar, session, timestamp
+                    email, firstName, lastName, avatar, session, timestamp, acl.description as acl
                 FROM 
-                    Users
+                    Users, users_acl, acl
                 WHERE
-                    id=:id
+                    Users.id=:id
+                AND
+                    Users.id = users_acl.userid
+                AND
+                    users_acl.aclid = acl.id
             ');
             $database->bind(':id', $this->getID());
             $row = $database->single();
@@ -201,11 +212,27 @@ class User {
             $this->setAvatar($row['avatar']);
             $this->setSession($row['session']);
             $this->setRegistrationDate($row['timestamp']);
+            $this->setAcl($row['acl']);
             return true;
         }
         catch(Exception $e){
             return false;
         }
+    }
+
+    public function getAllUsers() {
+        $database = new Database;
+        $database->query('
+        SELECT 
+            email, firstName, lastName, avatar, session, timestamp, acl.description as acl
+        FROM 
+            Users, users_acl, acl
+        WHERE
+            Users.id = users_acl.userid
+        AND
+            users_acl.aclid = acl.id
+        ');
+        return $database->resultset();
     }
 
     //GOOGLE USER
