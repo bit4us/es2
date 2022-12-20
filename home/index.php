@@ -54,8 +54,8 @@ else{
 									<!--end::Mobile menu toggle-->
 									<!--begin::Logo image-->
 									<a href=".">
-										<img alt="Logo" src="../../assets/media/logos/ES-red-yellow-long.svg" class="logo-default h-25px h-lg-30px" />
-										<img alt="Logo" src="../../assets/media/logos/ES-red-yellow-long.svg" class="logo-sticky h-20px h-lg-25px" />
+										<img alt="Logo" src="../assets/media/logos/ES-red-yellow-long.svg" class="logo-default h-25px h-lg-30px" />
+										<img alt="Logo" src="../assets/media/logos/ES-red-yellow-long.svg" class="logo-sticky h-20px h-lg-25px" />
 									</a>
 									<!--end::Logo image-->
 								</div>
