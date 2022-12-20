@@ -14,12 +14,12 @@
 		<meta property="og:title" content="" />
 		<meta property="og:url" content="https://es2/" />
 		<meta property="og:site_name" content="Easy Speak 2.0" />
-		<link rel="shortcut icon" href="../../assets/media/logos/ES-red-yellow.svg" />
+		<link rel="shortcut icon" href="../assets/media/logos/ES-red-yellow.svg" />
 		<!--begin::Fonts(mandatory for all pages)-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-		<link href="../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 
