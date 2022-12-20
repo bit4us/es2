@@ -17,9 +17,33 @@ else{
 
 
 ?>
-<?php include_once '../assets/php_includes/modules/__header__global.php'; ?>
+<!DOCTYPE html>
 
-<?php include_once '../assets/php_includes/modules/__header__end.php'; ?>
+<html lang="en">
+	<!--begin::Head-->
+	<head>
+		<!-- <base href="../../../"/> -->
+		<title>Easy speak 2.0 - The new club management experience</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="" />
+		<meta property="og:url" content="https://es2/" />
+		<meta property="og:site_name" content="Easy Speak 2.0" />
+		<link rel="shortcut icon" href="../assets/media/logos/ES-red-yellow.svg" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+
+		</head>
+	<!--end::Head-->
 
 	<!--begin::Body-->
 	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-white position-relative app-blank">
@@ -171,7 +195,7 @@ else{
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
-								<!--<img src="../../assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />-->
+								<!--<img src="../assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />-->
 								<!--end::Illustration-->
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
@@ -195,7 +219,7 @@ else{
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
-								<!--<img src="../../assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" />-->
+								<!--<img src="../assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" />-->
 								<!--end::Illustration-->
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
@@ -219,7 +243,7 @@ else{
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
-								<!--<img src="../../assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />-->
+								<!--<img src="../assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />-->
 								<!--end::Illustration-->
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
@@ -275,7 +299,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-1.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-1.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -292,7 +316,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-2.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-2.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -309,7 +333,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-5.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-5.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -326,7 +350,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-20.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-20.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -343,7 +367,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-23.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-23.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -360,7 +384,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-12.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-12.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -377,7 +401,7 @@ else{
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../../assets/media/avatars/300-9.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('../assets/media/avatars/300-9.jpg')"></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -466,9 +490,9 @@ else{
 										<!--begin::Col-->
 										<div class="col-lg-6">
 											<!--begin::Item-->
-											<!--<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/badpresentation04.jpg">-->
+											<!--<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/badpresentation04.jpg">-->
 												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('../../assets/media/stock/presentations/badpresentation04.jpg')"></div>
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('../assets/media/stock/presentations/badpresentation04.jpg')"></div>
 												<!--end::Image-->
 												<!--begin::Action-->
 												<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -486,9 +510,9 @@ else{
 												<!--begin::Col-->
 												<div class="col-lg-6">
 													<!--begin::Item-->
-													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/badpresentation05.jpg">-->
+													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/badpresentation05.jpg">-->
 														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../../assets/media/stock/presentations/badpresentation05.jpg')"></div>
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../assets/media/stock/presentations/badpresentation05.jpg')"></div>
 														<!--end::Image-->
 														<!--begin::Action-->
 														<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -502,9 +526,9 @@ else{
 												<!--begin::Col-->
 												<div class="col-lg-6">
 													<!--begin::Item-->
-													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/badpresentation01.jpg">-->
+													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/badpresentation01.jpg">-->
 														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../../assets/media/stock/presentations/badpresentation01.jpg')"></div>
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../assets/media/stock/presentations/badpresentation01.jpg')"></div>
 														<!--end::Image-->
 														<!--begin::Action-->
 														<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -518,9 +542,9 @@ else{
 											</div>
 											<!--end::Row-->
 											<!--begin::Item-->
-											<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/badpresentation02.png">-->
+											<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/badpresentation02.png">-->
 												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../../assets/media/stock/presentations/badpresentation02.png')"></div>
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../assets/media/stock/presentations/badpresentation02.png')"></div>
 												<!--end::Image-->
 												<!--begin::Action-->
 												<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -549,9 +573,9 @@ else{
 										<!--begin::Col-->
 										<div class="col-lg-6">
 											<!--begin::Item-->
-											<!--<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/presentation07.jpg">-->
+											<!--<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/presentation07.jpg">-->
 												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('../../assets/media/stock/presentations/presentation07.jpg')"></div>
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('../assets/media/stock/presentations/presentation07.jpg')"></div>
 												<!--end::Image-->
 												<!--begin::Action-->
 												<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -569,9 +593,9 @@ else{
 												<!--begin::Col-->
 												<div class="col-lg-6">
 													<!--begin::Item-->
-													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/presentation00.jpg">-->
+													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/presentation00.jpg">-->
 														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../../assets/media/stock/presentations/presentation00.jpg')"></div>
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../assets/media/stock/presentations/presentation00.jpg')"></div>
 														<!--end::Image-->
 														<!--begin::Action-->
 														<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -585,9 +609,9 @@ else{
 												<!--begin::Col-->
 												<div class="col-lg-6">
 													<!--begin::Item-->
-													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../../assets/media/stock/presentations/presentation04.jpg">-->
+													<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../assets/media/stock/presentations/presentation04.jpg">-->
 														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../../assets/media/stock/presentations/presentation05.jpg')"></div>
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../assets/media/stock/presentations/presentation05.jpg')"></div>
 														<!--end::Image-->
 														<!--begin::Action-->
 														<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -601,9 +625,9 @@ else{
 											</div>
 											<!--end::Row-->
 											<!--begin::Item-->
-											<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../../assets/media/stock/600x400/presentations/presentation03.jpg">-->
+											<!--<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="../assets/media/stock/600x400/presentations/presentation03.jpg">-->
 												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../../assets/media/stock/presentations/presentation03.jpg')"></div>
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('../assets/media/stock/presentations/presentation03.jpg')"></div>
 												<!--end::Image-->
 												<!--begin::Action-->
 												<!--<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -670,19 +694,19 @@ else{
 										<!--end::Subtitle-->
 										<!--begin::Link-->
 										<a href="#" class="mb-6">
-											<img src="../../assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
+											<img src="../assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
 											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>
 										</a>
 										<!--end::Link-->
 										<!--begin::Link-->
 										<a href="#" class="mb-6">
-											<img src="../../assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
+											<img src="../assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
 											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>
 										</a>
 										<!--end::Link-->
 										<!--begin::Link-->
 										<a href="#" class="mb-6">
-											<img src="../../assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
+											<img src="../assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
 											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
 										</a>
 										<!--end::Link-->
@@ -706,25 +730,25 @@ else{
 							<!--begin::Copyright-->
 							<div class="d-flex align-items-center order-2 order-md-1">
 								<!--begin::Logo-->
-								<a href="../../demo1/dist/landing.html">
-									<img alt="Logo" src="../../assets/media/logos/ES-red-yellow-long.svg" class="h-15px h-md-20px" />
+								<a href="#">
+									<img alt="Logo" src="../assets/media/logos/ES-red-yellow-long.svg" class="h-15px h-md-20px" />
 								</a>
 								<!--end::Logo image-->
 								<!--begin::Logo image-->
-								<span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com">&copy; 2022 EasySpeak 2.0</span>
+								<span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="#">&copy; 2022 EasySpeak 2.0</span>
 								<!--end::Logo image-->
 							</div>
 							<!--end::Copyright-->
 							<!--begin::Menu-->
 							<!--<ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
 								<li class="menu-item">
-									<a href="" target="_blank" class="menu-link px-2">About</a>
+									<a href="#" target="_blank" class="menu-link px-2">About</a>
 								</li>
 								<li class="menu-item mx-5">
-									<a href="" target="_blank" class="menu-link px-2">Support</a>
+									<a href="#" target="_blank" class="menu-link px-2">Support</a>
 								</li>
 								<li class="menu-item">
-									<a href="" target="_blank" class="menu-link px-2">Purchase</a>
+									<a href="#" target="_blank" class="menu-link px-2">Purchase</a>
 								</li>
 							</ul>-->
 							<!--end::Menu-->
@@ -767,17 +791,17 @@ else{
 		</div>
 		<!--end::Scrolltop-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "../../assets/";</script>
+		<script>var hostUrl = "../assets/";</script>
 		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-		<script src="../../assets/plugins/global/plugins.bundle.js"></script>
-		<script src="../../assets/js/scripts.bundle.js"></script>
+		<script src="../assets/plugins/global/plugins.bundle.js"></script>
+		<script src="../assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Vendors Javascript(used for this page only)-->
-		<script src="../../assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
-		<script src="../../assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+		<script src="../assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<script src="../assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
 		<!--end::Vendors Javascript-->
 		<!--begin::Custom Javascript(used for this page only)-->
-		<script src="../../assets/js/custom/landing.js"></script>
+		<script src="../assets/js/custom/landing.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
