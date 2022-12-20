@@ -15,14 +15,14 @@ CREATE TABLE `users_roles`
 CREATE TABLE `officers` 
     (
         `id` INT(40) NOT NULL AUTO_INCREMENT ,
-        `description` VARCHAR(20) ,
+        `description` VARCHAR(50) ,
         PRIMARY KEY (`id`)
     );
 
 CREATE TABLE `users_officers` 
     (
-        `userid` INT(40) NOT NULL AUTO_INCREMENT ,
-        `officersid` VARCHAR(20) ,
-        `assignmentdate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+        `userid` INT,
+        `officersid` INT ,
+        `assignmentdate` TIMESTAMP , 
         PRIMARY KEY (`userid`)
     );

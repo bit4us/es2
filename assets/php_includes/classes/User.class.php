@@ -3,7 +3,7 @@
 include_once('Log.class.php');
 
 class User {
-    private $id, $email, $password, $firstName, $lastName, $avatar, $session, $registrationDate, $acl; 
+    private $id, $email, $password, $firstName, $lastName, $avatar, $session, $registrationDate, $acl, $role, $officer; 
 
     public function setID($id){
         $this->id=$id;
@@ -59,7 +59,24 @@ class User {
     public function getAcl(){
         return $this->acl;
     }
-
+    public function setRole($role){
+        $this->role=$role;
+    }
+    public function getRole(){
+        return $this->role;
+    }
+    public function setOfficer($officer){
+        $this->officer=$officer;
+    }
+    public function getOfficer(){
+        return $this->officer;
+    }
+    public function setOfficerSince($officerSince){
+        $this->officerSince=$officerSince;
+    }
+    public function getOfficerSince(){
+        return $this->officerSince;
+    }
 
     private function generateCode($length){
         $chars = "vwxyzABCD0123456";
@@ -193,16 +210,19 @@ class User {
         $database = new Database;
         try{
             $database->query('
-                SELECT 
-                    email, firstName, lastName, avatar, session, timestamp, acl.description as acl
-                FROM 
-                    Users, users_acl, acl
-                WHERE
-                    Users.id=:id
-                AND
-                    Users.id = users_acl.userid
-                AND
-                    users_acl.aclid = acl.id
+            SELECT 
+                email, firstName, lastName, avatar, session, timestamp, 
+                acl.description as acl, roles.description as role, 
+                officers.description as officer, 
+                users_officers.assignmentdate as officer_since
+            FROM Users 
+                LEFT JOIN users_acl ON Users.id = users_acl.userid
+                LEFT JOIN acl ON users_acl.aclid = acl.id
+                LEFT JOIN users_roles ON Users.id = users_roles.userid
+                LEFT JOIN roles ON users_roles.roleid = roles.id
+                LEFT JOIN users_officers ON Users.id = users_officers.userid
+                LEFT JOIN officers ON users_officers.officersid = officers.id
+            WHERE Users.id=:id
             ');
             $database->bind(':id', $this->getID());
             $row = $database->single();
@@ -213,6 +233,9 @@ class User {
             $this->setSession($row['session']);
             $this->setRegistrationDate($row['timestamp']);
             $this->setAcl($row['acl']);
+            $this->setRole($row['role']);
+            $this->setOfficer($row['officer']);
+            $this->setOfficerSince($row['officer_since']);
             return true;
         }
         catch(Exception $e){
@@ -224,13 +247,17 @@ class User {
         $database = new Database;
         $database->query('
         SELECT 
-            email, firstName, lastName, avatar, session, timestamp, acl.description as acl
-        FROM 
-            Users, users_acl, acl
-        WHERE
-            Users.id = users_acl.userid
-        AND
-            users_acl.aclid = acl.id
+            email, firstName, lastName, avatar, session, timestamp, 
+            acl.description as acl, roles.description as role, 
+            officers.description as officer, 
+            users_officers.assignmentdate as officer_since
+        FROM Users 
+            LEFT JOIN users_acl ON Users.id = users_acl.userid
+            LEFT JOIN acl ON users_acl.aclid = acl.id
+            LEFT JOIN users_roles ON Users.id = users_roles.userid
+            LEFT JOIN roles ON users_roles.roleid = roles.id
+            LEFT JOIN users_officers ON Users.id = users_officers.userid
+            LEFT JOIN officers ON users_officers.officersid = officers.id
         ');
         return $database->resultset();
     }
