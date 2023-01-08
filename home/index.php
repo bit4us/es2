@@ -166,7 +166,7 @@ else{
 			</div>
 			<!--end::Header Section-->
 			
-			<div class="" style="position: relative; margin-top: -80px">
+			<div class="" style="position: relative; margin-top: -90px">
 				<!--begin::Curve top-->
 				<div class="landing-curve landing-dark-color">
 					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">

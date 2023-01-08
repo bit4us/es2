@@ -7,8 +7,8 @@ CREATE TABLE `roles`
 
 CREATE TABLE `users_roles` 
     (
-        `userid` INT(40) NOT NULL AUTO_INCREMENT ,
-        `roleid` VARCHAR(20) ,
+        `userid` INT(40) NOT NULL ,
+        `roleid` INT(20) NOT NULL,
         PRIMARY KEY (`userid`)
     );
 

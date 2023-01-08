@@ -28,7 +28,7 @@ if(isset($token["error"]) != "invalid_grant"){
     if($user->googleAuthenticate()){
         // echo $user->getFirstName();
         $_SESSION['id'] = $user->getID();
-        header('Location: /app/dashboard/');
+        header('Location: ../../app/dashboard/');
         exit;
     }
     else{
