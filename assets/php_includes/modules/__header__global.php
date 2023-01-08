@@ -2,7 +2,7 @@
 
 <html lang="en">
 	<!--begin::Head-->
-	<head>
+	<head><base href="../../"/>
 		<!-- <base href="../../../"/> -->
 		<title>Easy speak 2.0 - The new club management experience</title>
 		<meta charset="utf-8" />
