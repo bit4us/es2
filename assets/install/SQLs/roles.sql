@@ -1,7 +1,7 @@
 CREATE TABLE `roles` 
     (
         `id` INT NOT NULL AUTO_INCREMENT ,
-        `description` VARCHAR(20) ,
+        `name` VARCHAR(30) ,
         PRIMARY KEY (`id`)
     );
 
@@ -12,22 +12,7 @@ CREATE TABLE `users_roles`
         PRIMARY KEY (`userid`)
     );
 
-CREATE TABLE `officers` 
-    (
-        `id` INT NOT NULL AUTO_INCREMENT ,
-        `description` VARCHAR(50) ,
-        PRIMARY KEY (`id`)
-    );
-
-CREATE TABLE `users_officers` 
-    (
-        `userid` INT,
-        `officersid` INT ,
-        `assignmentdate` TIMESTAMP , 
-        PRIMARY KEY (`userid`)
-    );
-
-CREATE TABLE `roles_permissions`
+CREATE TABLE `permissions`
     (
         `id` INT NOT NULL AUTO_INCREMENT,
         `description` VARCHAR(20),
@@ -37,3 +22,10 @@ CREATE TABLE `roles_permissions`
         `create` BOOLEAN NOT NULL,
         PRIMARY KEY (`id`)
     );
+
+CREATE TABLE `role_permissions`
+    (
+        `roleid` INT NOT NULL,
+        `permissionid` INT NOT NULL,
+        PRIMARY KEY(`roleid`)
+    )

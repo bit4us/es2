@@ -67,7 +67,7 @@
 										<div class="ms-6">
 											<!--begin::Name-->
 											<a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary"><?=$oneUser['firstName']?> <?=$oneUser['lastName']?>
-											<span class="badge badge-light fs-8 fw-semibold ms-2"><?=$oneUser['acl'] ?></span></a>
+											<span class="badge badge-light fs-8 fw-semibold ms-2"><?=$oneUser['role']?></span></a>
 											<!--end::Name-->
 											<!--begin::Email-->
 											<div class="fw-semibold text-muted"><?=$oneUser['email'] ?></div>
@@ -80,8 +80,7 @@
 									<div class="d-flex">
 										<!--begin::Sales-->
 										<div class="text-end">
-											<div class="fs-5 fw-bold text-dark"><?=$oneUser['role']?></div>
-											<div class="fs-7 text-muted"><?=$oneUser['officer']?></div>
+											<div class="fs-5 fw-bold text-dark"></div>
 										</div>
 										<!--end::Sales-->
 									</div>

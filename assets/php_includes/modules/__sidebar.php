@@ -1,3 +1,8 @@
+<?php
+  
+?>
+
+
 <!--begin::Sidebar-->
 <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
   <!--begin::Logo-->
@@ -31,7 +36,7 @@
         <!--begin:Menu item-->
         <div class="menu-item">
           <!--begin:Menu link-->
-          <a class="menu-link" href="../../app/dashboard/">
+          <a class="menu-link" href="/app/dashboard/">
           <span class="menu-icon">
             <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
             <span class="svg-icon svg-icon-2">
