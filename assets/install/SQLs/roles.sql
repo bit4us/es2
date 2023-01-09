@@ -15,11 +15,7 @@ CREATE TABLE `users_roles`
 CREATE TABLE `permissions`
     (
         `id` INT NOT NULL AUTO_INCREMENT,
-        `description` VARCHAR(20),
-        `role_id` INT NOT NULL,
-        `read` BOOLEAN NOT NULL,
-        `write` BOOLEAN NOT NULL,
-        `create` BOOLEAN NOT NULL,
+        `name` VARCHAR(30),
         PRIMARY KEY (`id`)
     );
 
@@ -27,5 +23,8 @@ CREATE TABLE `role_permissions`
     (
         `roleid` INT NOT NULL,
         `permissionid` INT NOT NULL,
+        `read` BOOLEAN NOT NULL,
+        `write` BOOLEAN NOT NULL,
+        `create` BOOLEAN NOT NULL,
         PRIMARY KEY(`roleid`)
     )
